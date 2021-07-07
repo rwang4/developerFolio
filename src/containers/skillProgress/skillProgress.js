@@ -18,7 +18,8 @@ export default function StackProgress() {
               };
               return (
                 <div key={i} className="skill">
-                  <p>{exp.Stack}</p>
+                  <span>{exp.Stack}</span>
+                  <span className="progress">{exp.progressPercentage}</span>
                   <div className="meter">
                     <span style={progressStyle}></span>
                   </div>
@@ -33,7 +34,7 @@ export default function StackProgress() {
             ) : (
               <img
                 alt="Skills"
-                src={require("../../assets/images/skill.svg")}
+                src={require("../../assets/images/undraw_startup_life.svg")}
               />
             )}
           </div>

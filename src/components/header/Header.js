@@ -7,20 +7,18 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
+  bigProjects,
+  educationInfo,
   achievementSection
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
+  const viewExperience = workExperiences.display;
+  const viewEducation = educationInfo.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
+  const viewBigProject = bigProjects.display;
 
   return (
     <Headroom>
@@ -41,7 +39,7 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Tech Stack</a>
             </li>
           )}
           {viewExperience && (
@@ -49,9 +47,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
+          {viewEducation && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewAchievement && (
@@ -59,14 +57,9 @@ function Header() {
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
+          {viewBigProject && (
             <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           <li>
