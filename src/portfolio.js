@@ -99,6 +99,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "git",
       fontAwesomeClassname: "fab fa-git"
+    },
+    {
+      skillName: "WordPress",
+      fontAwesomeClassname: "fab fa-wordpress"
+    },
+    {
+      skillName: "matlab",
+      image: require("./assets/images/matlab-icon.svg")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -196,7 +204,7 @@ const workExperiences = {
     {
       role: "Front-End Website Developer",
       company: "Savior of the nations Lutheran Church",
-      companylogo: require("./assets/images/abidingLoveLogo.png"),
+      companylogo: require("./assets/images/abiding-love-logo.png"),
       date: "June 2019 – Sep 2019",
       desc: "",
       descBullets: [
@@ -367,7 +375,7 @@ const contactInfo = {
   title: emoji("Contact Me 🤙"),
   subtitle:
     emoji("Wanna say hi? My Inbox is open for you all the times 🥰."),
-  intro: "I am a New Grad from University of Alberta, Looking for an Entry/Junior-Level Software Developer/ Software Engineer Jobs",
+  intro: "I am a New Grad from University of Alberta, Looking for an Entry/Junior-Level Software Developer/ Software Engineer Jobs.",
   number: "587-778-3889",
   email_address: "rickywang1123@gmail.com",
   situation: "🗸",

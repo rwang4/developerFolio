@@ -16,7 +16,6 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .project-card-dark {
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
@@ -74,6 +73,13 @@
   font-weight: 700;
   margin: 15px 0 0 0;
 }
+
+.card_title_dark{color: $textColorDark;
+  font-size: 34px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;}
+
 .card_subtitle {
   color: $cardSubtitle;
   font-size: 24px;

@@ -47,13 +47,13 @@ export default function StartupProject() {
                   ) : null}
                   <div className="project-detail">
                     <h5
-                      className={isDark ? "dark-mode card_title" : "card_title"}
+                      className={isDark ? "card_title_dark" : "card_title"}
                     >
                       {project.projectName}
                     </h5>
                     <p
                       className={
-                        isDark ? "dark-mode card_subtitle" : "card_subtitle"
+                        isDark ? "card_subtitle" : "card_subtitle"
                       }
                     >
                       {project.projectDesc}
@@ -65,7 +65,7 @@ export default function StartupProject() {
                             <Button
                               text={link.name}
                               className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
+                                isDark ? "project-tag" : "project-tag"
                               }
                               href = {link.url}
                               target = {link.url}
