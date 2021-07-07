@@ -42,9 +42,9 @@ export default function StartupProject() {
                   {project.image ? (
                     <div className="project-image">
                       <img
+                        className = "card-image"
                         src={project.image}
                         alt={project.projectName}
-                        className="card-image"
                       ></img>
                     </div>
                   ) : null}

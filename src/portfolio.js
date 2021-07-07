@@ -224,24 +224,24 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Abiding Love Chinese Church",
+      projectDesc: "React / WordPress",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn More",
+          url: "http://abidinglovechinesechurch.com//"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/petbook-app.png"),
+      projectName: "PetBook",
+      projectDesc: "Flutter / Firebase",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn More",
+          url: "https://docs.google.com/document/d/e/2PACX-1vQctVkzFO34lPmeLUUNQmPXwuSKK8lqdt233hUrYbv03cVdPzO2WKtJTelDSmSVsVz9U--QgLvUVsHI/pub"
         }
       ]
     }
