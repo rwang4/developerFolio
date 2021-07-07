@@ -1,11 +1,10 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import emoji from "react-easy-emoji";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -29,31 +28,40 @@ export default function Contact() {
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              <a className="contact-detail" href={"tel:" + contactInfo.number}>
-                {contactInfo.number}
-              </a>
-              <br />
-              <br />
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
+              <p className={"contact-info"}>{contactInfo.intro}</p>
+              <p>
+                {emoji("Email Me 📧: ")}
+                <a
+                  className="contact-detail-email"
+                  href={"mailto:" + contactInfo.email_address}
+                >
+                  {contactInfo.email_address}
+                </a>
+              </p>
+              <p>
+                {emoji("Call Me ☎️: ")}
+                <a
+                  className="contact-detail"
+                  href={"tel:" + contactInfo.number}
+                >
+                  {contactInfo.number}
+                </a>
+              </p>
+              <p>
+                {emoji("Open for Opportunities:  " + contactInfo.situation)}
+              </p>
+              <p>{emoji("Willing to relocate:  " + contactInfo.situation)} {"\t" + contactInfo.location}</p>
               <SocialMedia />
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
+            <div className="profile-image">
               <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+                className="avatar-image"
+                src={contactInfo.image}
+                alt="Ricky Wang"
+              />
+            </div>
           </div>
         </div>
       </div>

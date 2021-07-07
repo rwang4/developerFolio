@@ -40,6 +40,7 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
+                <span style={{padding: "20px"}}></span>
                 <Button
                   text="See my resume"
                   newTab={true}

@@ -220,10 +220,10 @@ const openSource = {
 
 const bigProjects = {
   title: "My Awesome Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/abidinglove-webpage.png"),
       projectName: "Abiding Love Chinese Church",
       projectDesc: "React / WordPress",
       footerLink: [
@@ -364,11 +364,15 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 🤙"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    emoji("Wanna say hi? My Inbox is open for you all the times 🥰."),
+  intro: "I am a New Grad from University of Alberta, Looking for an Entry/Junior-Level Software Developer/ Software Engineer Jobs",
   number: "587-778-3889",
-  email_address: "rickywang1123@gmail.com"
+  email_address: "rickywang1123@gmail.com",
+  situation: "🗸",
+  location: "BC, Alberta, Ontario, Seattle, China",
+  image: require("./assets/images/ricky-selfie.png")
 };
 
 // Twitter Section

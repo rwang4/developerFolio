@@ -1,4 +1,4 @@
-@import '../../_globalColor';
+@import "../../_globalColor";
 
 .contact-div-main {
   display: flex;
@@ -17,12 +17,15 @@
   font-weight: 400;
 }
 
+.contact-info{
+  color: $subTitle;
+}
+
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
-  color: $subTitle;
   text-decoration: none;
 }
 
@@ -45,13 +48,28 @@
   margin-top: 4rem;
 }
 
-.contact-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
+.profile-image {
+  float: right;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: double;
+  border-width: 13px;
+  border-color: $githubProfileCardBorder;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px 20px;
+  width: auto;
+  height: 400px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.profile-image:hover{
+  box-shadow: $lightBoxShadowDarker 0px 10px 30px 10px;
 }
 
+.avatar-image{
+  max-width: 100%;
+  max-height: 100%;
+}
 /* Media Query */
 @media (max-width: 1380px), (max-width: 768px) {
   .contact-title {

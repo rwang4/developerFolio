@@ -1,14 +1,11 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
+import Button from "../../components/button/Button";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  function openProjectInNewWindow(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -42,7 +39,7 @@ export default function StartupProject() {
                   {project.image ? (
                     <div className="project-image">
                       <img
-                        className = "card-image"
+                        className="card_image"
                         src={project.image}
                         alt={project.projectName}
                       ></img>
@@ -50,13 +47,13 @@ export default function StartupProject() {
                   ) : null}
                   <div className="project-detail">
                     <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
+                      className={isDark ? "dark-mode card_title" : "card_title"}
                     >
                       {project.projectName}
                     </h5>
                     <p
                       className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        isDark ? "dark-mode card_subtitle" : "card_subtitle"
                       }
                     >
                       {project.projectDesc}
@@ -65,15 +62,14 @@ export default function StartupProject() {
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
-                            <span
-                              key={i}
+                            <Button
+                              text={link.name}
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openProjectInNewWindow(link.url)}
-                            >
-                              {link.name}
-                            </span>
+                              href = {link.url}
+                              target = {link.url}
+                            />
                           );
                         })}
                       </div>
