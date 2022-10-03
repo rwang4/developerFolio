@@ -3,7 +3,7 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 100px;
+  font-size: 70px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -12,7 +12,7 @@
 .software-skill-inline {
   display: inline-block;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .software-skill-inline > i {
@@ -21,7 +21,7 @@
 
 .software-skill-inline > p {
   color: $subTitle;
-  font-size: 20px;
+  font-size: 15px;
 }
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;

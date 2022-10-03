@@ -12,12 +12,12 @@ const illustration = {
 
 const greeting = {
   username: "Ricky Wang",
-  title: "Hello, I'm Ricky",
+  title: "Hey, I'm Ricky",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 who is keen on designing and building Web and Mobile applications with Java/ JavaScript / React / Node.js / Dart and some other cool libraries and frameworks."
+    `A forward-thinking Full Stack Software Engineer 🚀 with experience in different aspects of the software development lifecycle and end-to-end project management, from concept to development.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1V2U1Vllt1JdE4T5oaUgFr4DzZnyRVXzz/view?usp=sharing",
+    "https://drive.google.com/file/d/1SZHlURIjdQWxEUdoFJCgh8BQ_OxbMxWC/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -25,7 +25,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/rwang4",
-  linkedin: "linkedin.com/in/ricky-wang-65232b177",
+  linkedin: "https://linkedin.com/in/ricky-wang-65232b177",
   gmail: "rickywang1123@gmail.com",
   // Instagram and Twitter are also supported in the links!
   display: true // Set true to display this section, defaults to false
@@ -36,9 +36,14 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "My Tech Stack",
   subTitle: emoji(
-    "⚡ Full Stack Mobile and Web Developer who expects to learn and explore more awesome Tech Stack"
+    "⚡ PASSIONATE FULL STACK DEVELOPER WHO IS KEEN ON EXPLORING EVERY TECH STACK"
   ),
-  skills: [],
+  skills: [
+    "✨ Develop highly interactive and user friendly Front end / User Interfaces for your web and mobile applications",
+    "✨ Integration of Cloud services such as AWS / Firebase",
+    "✨ Progressive Web Applications ( PWA ) in normal and SPA Stacks",
+    "✨ Well-organized and customer-focused with proven skills in project management and team leadership."
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -49,8 +54,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "C/C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
       skillName: "Java",
@@ -65,15 +70,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "php",
-      fontAwesomeClassname: "fab fa-php"
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "SASS",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "React",
+      skillName: "React/Redux",
       fontAwesomeClassname: "fab fa-react"
     },
     {
@@ -81,23 +82,31 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "C/C++",
-      fontAwesomeClassname: "fab fa-cuttlefish"
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "Flutter",
-      image: require("./assets/images/flutter-icon.svg")
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
       skillName: "SQL-Database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "firebase",
+      skillName: "Dart/Flutter",
+      image: require("./assets/images/flutter-icon.svg")
+    },
+    {
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "git",
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Git",
       fontAwesomeClassname: "fab fa-git"
     },
     {
@@ -105,8 +114,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-wordpress"
     },
     {
-      skillName: "matlab",
-      image: require("./assets/images/matlab-icon.svg")
+      skillName: "Figma",
+      fontAwesomeClassname: "fab fa-figma"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -119,13 +128,14 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Alberta",
-      logo: require("./assets/images/university-of-alberta-logo.png"),
-      subHeader: "Bachelor of Science with Honor in Computer Science",
+      logo: require("./assets/images/UA_logo.png"),
+      subHeader: "Bachelor of Science: Computing Science",
       duration: "September 2016 - June 2021",
       desc: "Achievements:",
       descBullets: [
-        "Dean’s Honor Roll",
+        "Dean's Honor Roll",
         "Published a research paper - Ensemble Learning For Mega Man Level Generation on FDG-2021",
+        "Graduated in Bachelor of Science with Honor",
         "Average GPA 3.5"
       ]
     },
@@ -155,19 +165,21 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "75%"
+      progressPercentage: "70%"
     },
     {
-      Stack: "Design/Documentation",
+      Stack: "UI/UX Design",
       progressPercentage: "80%"
     },
     {
-      Stack: "Algorithm/Data Structure",
-      progressPercentage: "85%"
+      Stack: "Algorithms & Data Structures",
+      progressPercentage: "90%"
     },
-    {Stack: "Machine Learning/Data Science",
-    progressPercentage: "70%"},
-
+    {
+      Stack: "Cloud Computing",
+      progressPercentage: "65%"
+    },
+    {Stack: "Machine Learning / Data Science", progressPercentage: "55%"}
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -178,39 +190,57 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "University CS Course Tutor",
-      company: "Vertex Global Education",
-      companylogo: require("./assets/images/qihang-logo.jpg"),
-      date: "Mar 2020 – Present",
+      role: "Full Stack Developer",
+      company: "Fathom Scientific Ltd.",
+      companylogo: require("./assets/images/FSL_logo.png"),
+      date: "Dec 2021 - Current",
       descBullets: [
-        "Responsible for ensuring students fully comprehended course materials and provided support and advice to students who prepared for exams.",
-        "Taught and mastered several CS courses including Python Class, C/C++ Class, Data Structure/ Algorithms Class, and Database/SQL Class.",
-        "Achieved high evaluation and greatly boosted students’ final score"
+        "Responsible for leading and developing the QiQuac Mobile App Project, including application design and launching.",
+        "Plan and provide advice to the full stack developing of the Timeseries Web App Project.",
+        "In charge of assigning tickets to guide project outline and to achieve milestones.",
+        "Design and develop significant features such as SD Station Migration, SD Calculation and SQL Table.",
+        "Provide support to investors and specialized customers groups.",
+        "Utilities: Dart, Flutter, Django, Docker, React, SQLite"
       ]
     },
     {
-      role: "Full Stack ios & Android App Developer",
-      company: "StyleBox Media",
-      companylogo: require("./assets/images/styleboxLogo.png"),
-      date: "Sep 2020 – Feb 2021",
-      desc: "StyleBox Media is a digital media agency that specializes in producing digital content for our clients.",
+      role: "Lead Full Stack Developer",
+      company: "The Pet App INC.",
+      companylogo: require("./assets/images/thepetapp.png"),
+      date: "Sep 2020 - July 2022",
       descBullets: [
-        "Designed and Developed a cross platform mobile application for Android and iOS using Flutter as the front-end development kit, and Firebase for back-end services.",
-        "Led the development of the map-based user interacting, map clustering, and geolocation updating features, resulting in improved user experience and over 15% updating time saving.",
-        "Documented all supported packages and applications to effectively train the new team members.",
+        "Promoted to Lead Developer after 6-month internship in 2020.",
+        "Design and develop cross platform mobile application for Android and iOS using Flutter and Firebase.",
+        "Generate production-ready code with fluency in modern front-end and back-end frameworks.",
+        "Lead the development of user authentication, direct message features, map-based user interaction, and geolocation features. Revision resulting in improved user experience and increasing data update by 15%.",
+        "Document all supported packages and applications to effectively train new team members.",
         "Utilities: Dart, Flutter, Firebase, BLoC"
       ]
     },
     {
-      role: "Front-End Website Developer",
-      company: "Savior of the nations Lutheran Church",
-      companylogo: require("./assets/images/abiding-love-logo.png"),
-      date: "June 2019 – Sep 2019",
-      desc: "",
+      role: "Full Stack Tech Support Lead",
+      company: "Richmond Women's Resource Centre",
+      companylogo: require("./assets/images/rwrc_logo.png"),
+      date: "April 2022 - July 2022",
       descBullets: [
-        "Built an official website for a new founding church with bilingual support, slideshow and other features.",
-        "Responsible for the website maintenance and update.",
-        "Utilities: HTML, CSS, Javascript, React, WordPress"
+        "Design and develop RWRC official website and its' associated features and external programs.",
+        "Design RWRC official WeChat account and insert new features depending on organization's marketing needs. ",
+        "In charge of all technical updates, maintenance, and cybersecurity.",
+        "Lead RWRC's tech support team and provide mentorship to interns.",
+        "Provide suggestions and inputs to organization's technical plans, including system renewals and feature upgrades.",
+        "Utilities:  HTML/CSS, JavaScript, AWS, Wix, Figma"
+      ]
+    },
+    {
+      role: "Lead Front End Developer",
+      company: "Enrich Developments Ltd.",
+      companylogo: require("./assets/images/enrich_logo.png"),
+      date: "July 2021 - March 2022",
+      descBullets: [
+        "Fully in charge of UI/UX design of web-based application.",
+        "Design and develop front-end web views such as content display, user profile, order management, product inventories, and slideshows etc.",
+        "Provide suggestions and collaborating with marketing team to achieve successful branding through tech-support.",
+        "Utilities: HTML/CSS, React/Redux, JavaScript, Figma"
       ]
     }
   ]
@@ -373,13 +403,12 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me 🤙"),
-  subtitle:
-    emoji("Wanna say hi? My Inbox is open for you all the times 🥰."),
-  intro: "I am a New Grad from University of Alberta, Looking for an Entry/Junior-Level Software Developer/ Software Engineer Jobs.",
-  number: "587-778-3889",
+  subtitle: emoji("Wanna say hi? My Inbox is open for you all the times 🥰."),
+  intro: "Actively Looking For IT Job Positions ",
+  number: "07541904617",
   email_address: "rickywang1123@gmail.com",
-  situation: "🗸",
-  location: "BC, Alberta, Ontario, Seattle, China",
+  situation: "✔️",
+  location: "Oxford, UK",
   image: require("./assets/images/ricky-selfie.png")
 };
 

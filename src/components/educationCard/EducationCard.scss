@@ -3,9 +3,10 @@
 .education-card, .education-card-dark{
   display: flex;
   flex-direction: row;
+  padding: 20px 10px 10px 5px;
 }
 
-.education-card, .education-card-dark:hover + .education-card-border {
+.education-card:hover+ .education-card-border, .education-card-dark:hover + .education-card-border {
   border-color: $educationCardBorder;
   width: 100%;
   -webkit-transition: width 0.6s ease-in-out;
@@ -20,6 +21,7 @@
 .education-card:hover {
   background-color: $lightBackground2;
 }
+
 .education-card-border {
   height: 30px;
   width: 80%;
