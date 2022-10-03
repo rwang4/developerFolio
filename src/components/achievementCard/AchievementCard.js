@@ -1,12 +1,8 @@
 import React from "react";
+import Button from "../../components/button/Button";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
-  function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
@@ -23,15 +19,15 @@ export default function AchievementCard({cardInfo, isDark}) {
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
           return (
-            <span
-              key={i}
+            <Button
+              text={v.name}
               className={
                 isDark ? "dark-mode certificate-tag" : "certificate-tag"
               }
-              onClick={() => openUrlInNewTab(v.url)}
-            >
-              {v.name}
-            </span>
+              href={v.url}
+              target={v.url}
+              newTab={true}
+            />
           );
         })}
       </div>

@@ -219,7 +219,7 @@ const workExperiences = {
     },
     {
       role: "Full Stack Tech Support Lead",
-      company: "Richmond Women's Resource Centre",
+      company: "Richmond RWRC",
       companylogo: require("./assets/images/rwrc_logo.png"),
       date: "April 2022 - July 2022",
       descBullets: [
@@ -261,25 +261,25 @@ const bigProjects = {
   // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/abidinglove-webpage.png"),
-      projectName: "Abiding Love Chinese Church",
-      projectDesc: "React / WordPress",
+      image: require("./assets/images/FSL_intro.png"),
+      projectName: "QiQuac Mobile",
+      projectDesc: "Dart / Flutter",
       footerLink: [
         {
           name: "Learn More",
-          url: "http://abidinglovechinesechurch.com//"
+          url: "https://play.google.com/store/apps/details?id=com.fathomscientific.qiquacmobile"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/petbook-app.png"),
-      projectName: "PetBook",
-      projectDesc: "Flutter / Firebase",
+      image: require("./assets/images/petapp_bg.png"),
+      projectName: "The Pet App",
+      projectDesc: "Dart / Flutter / Firebase",
       footerLink: [
         {
           name: "Learn More",
-          url: "https://docs.google.com/document/d/e/2PACX-1vQctVkzFO34lPmeLUUNQmPXwuSKK8lqdt233hUrYbv03cVdPzO2WKtJTelDSmSVsVz9U--QgLvUVsHI/pub"
+          url: "https://thepetapp.ca/"
         }
       ]
     }
@@ -291,58 +291,23 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications"),
+  subtitle: "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      title: "AWS Certified Cloud Practitioner",
+      subtitle: "Issued by Amazon Web Services (AWS)",
+      image: require("./assets/images/aws_badge.png"),
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          url: "https://www.credly.com/badges/b3a2a487-a274-47dd-b76b-d05b28949d37?source=linked_in_profile"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -403,9 +368,11 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me 🤙"),
-  subtitle: emoji("Wanna say hi? My Inbox is open for you all the times 🥰."),
-  intro: "Actively Looking For IT Job Positions ",
-  number: "07541904617",
+  subtitle: emoji(
+    "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL 🥰."
+  ),
+  intro: "Actively Looking For IT Job Positions",
+  number: "+44 7541 904617",
   email_address: "rickywang1123@gmail.com",
   situation: "✔️",
   location: "Oxford, UK",

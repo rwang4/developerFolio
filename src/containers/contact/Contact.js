@@ -39,7 +39,7 @@ export default function Contact() {
                 </a>
               </p>
               <p>
-                {emoji("Call Me ☎️: ")}
+                {emoji("Text Me ☎️: ")}
                 <a
                   className="contact-detail"
                   href={"tel:" + contactInfo.number}
@@ -48,9 +48,12 @@ export default function Contact() {
                 </a>
               </p>
               <p>
+                <i class="fas fa-map-marker-alt"></i>
+                <span> Oxford, UK</span>
+              </p>
+              <p>
                 {emoji("Open for Opportunities:  " + contactInfo.situation)}
               </p>
-              <p>{emoji("Willing to relocate:  " + contactInfo.situation)} {"\t" + contactInfo.location}</p>
               <SocialMedia />
             </div>
           </div>

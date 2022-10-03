@@ -46,16 +46,10 @@ export default function StartupProject() {
                     </div>
                   ) : null}
                   <div className="project-detail">
-                    <h5
-                      className={isDark ? "card_title_dark" : "card_title"}
-                    >
+                    <h5 className={isDark ? "card_title_dark" : "card_title"}>
                       {project.projectName}
                     </h5>
-                    <p
-                      className={
-                        isDark ? "card_subtitle" : "card_subtitle"
-                      }
-                    >
+                    <p className={isDark ? "card_subtitle" : "card_subtitle"}>
                       {project.projectDesc}
                     </p>
                     {project.footerLink ? (
@@ -64,11 +58,10 @@ export default function StartupProject() {
                           return (
                             <Button
                               text={link.name}
-                              className={
-                                isDark ? "project-tag" : "project-tag"
-                              }
-                              href = {link.url}
-                              target = {link.url}
+                              className={isDark ? "project-tag" : "project-tag"}
+                              href={link.url}
+                              target={link.url}
+                              newTab={true}
                             />
                           );
                         })}
