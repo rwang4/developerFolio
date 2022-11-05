@@ -19,9 +19,7 @@ export default function EducationCard({school}) {
   return (
     <div>
       <Fade left duration={1000}>
-        <div className={isDark
-                    ? "education-card-dark"
-                    : "education-card"}>
+        <div className={isDark ? "education-card-dark" : "education-card"}>
           <div className="education-card-left">
             <img
               crossOrigin={"anonymous"}
