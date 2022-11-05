@@ -298,7 +298,7 @@ const achievementSection = {
     {
       title: "AWS Certified Cloud Practitioner",
       subtitle: "Issued by Amazon Web Services (AWS)",
-      image: require("./assets/images/aws_badge.png"),
+      image: require("./assets/images/aws_badge.jpg"),
       footerLink: [
         {
           name: "Certification",
