@@ -26,13 +26,13 @@ export default class Main extends Component {
     };
   }
 
-  componentDidMount() {
-    if (localStorage.getItem("isDark") === null) {
-      const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-      localStorage.setItem("isDark", darkPref.matches);
-    }
-    this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
-  }
+  // componentDidMount() {
+  //   if (localStorage.getItem("isDark") === null) {
+  //     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  //     localStorage.setItem("isDark", darkPref.matches);
+  //   }
+  //   this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
+  // }
   changeTheme = () => {
     this.setState({isDark: !this.state.isDark}, () => {
       localStorage.setItem("isDark", this.state.isDark);
